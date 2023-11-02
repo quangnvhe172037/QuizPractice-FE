@@ -1,6 +1,6 @@
 import BASE_URL from "./baseapi";
 const subjectopicApi = () => {
-  return "http://localhost:8080/subject/get/";
+  return `${BASE_URL}/subject/get/`;
 };
 
 export default subjectopicApi;
