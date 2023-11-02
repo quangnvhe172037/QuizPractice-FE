@@ -1,0 +1,47 @@
+.wrap {
+  background-image: none;
+  max-width: 100%;
+}
+
+.slider-wrap {
+  margin-left: 50px;
+}
+
+.wrap h1 {
+  font-size: 48px;
+  color: black;
+}
+
+.sliderImage {
+  width: 100%;
+  height: auto;
+}
+
+.upload-notify {
+  margin: 10px 0;
+}
+
+.sliderBtn {
+  background-color: black;
+  color: white;
+}
+
+.sliderBtn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-back {
+  margin-left: 30px;
+}
+
+.btn-back a {
+  text-decoration: none;
+}
+
+.btn-back a:hover {
+  color: #fcc222;
+  text-decoration: none;
+}

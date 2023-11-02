@@ -1,0 +1,77 @@
+.slider-table-header{
+    text-align: center;
+}
+
+.slider-table-data{
+    text-align: center;
+}
+
+.slider-list-container{
+width: 100wh;
+    background-color: #fff;
+}
+
+.input-filter,
+.select-filter{
+    height:30px;
+    margin: 0 10px;
+    border:1px solid black;
+}
+
+.img-row{
+    width: 160px;
+}
+
+.editBtn a{
+    text-decoration: none;
+}
+
+.btn-action{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.btn-action:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.action-row{
+    padding: 0px;
+    display: flex;
+}
+
+
+.add-btn{
+    float:right;
+    margin: 20px 0;
+}
+
+.add-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.modify-btn {
+  background-color: black;
+  color: white;
+}
+
+.modify-btn a:hover {
+    opacity: 0.5;
+  text-decoration: none;
+}
+
+.modify-btn:hover {
+ opacity: 0.5;
+  text-decoration: none;
+}
+
+.modify-btn a{
+  text-decoration: none;
+  color: white;
+}
+
