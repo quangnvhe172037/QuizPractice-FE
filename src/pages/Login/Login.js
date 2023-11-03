@@ -136,7 +136,6 @@ const Login = () => {
   };
 
   const handleReload = () => {
-    window.location.reload();
   };
 
   const reloadTimeout = useRef(null);
