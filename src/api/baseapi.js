@@ -1,2 +1,2 @@
-const BASE_URL = "https://quang-nv1911.onrender.com";
+const BASE_URL = "https://quiz-practice-be.vercel.app";
 export default BASE_URL;
