@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc0d962d.css",
-    "main.js": "/static/js/main.bc55925c.js",
+    "main.css": "/static/css/main.bfdca4bb.css",
+    "main.js": "/static/js/main.911270ff.js",
     "static/js/787.b5084697.chunk.js": "/static/js/787.b5084697.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -9,17 +9,19 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/Capture.PNG": "/static/media/Capture.51c1870293a385f37d2e.PNG",
+    "static/media/fraction.cjs": "/static/media/fraction.a641cd80e2310e4e5e60.cjs",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.cc0d962d.css.map": "/static/css/main.cc0d962d.css.map",
-    "main.bc55925c.js.map": "/static/js/main.bc55925c.js.map",
+    "static/media/index.cjs": "/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.bfdca4bb.css.map": "/static/css/main.bfdca4bb.css.map",
+    "main.911270ff.js.map": "/static/js/main.911270ff.js.map",
     "787.b5084697.chunk.js.map": "/static/js/787.b5084697.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc0d962d.css",
-    "static/js/main.bc55925c.js"
+    "static/css/main.bfdca4bb.css",
+    "static/js/main.911270ff.js"
   ]
 }
