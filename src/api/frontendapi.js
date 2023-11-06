@@ -1,2 +1,2 @@
-const FE_URL = "https://quangnv1911-fe.onrender.com";
+const FE_URL = "http://localhost:8081";
 export default FE_URL;
