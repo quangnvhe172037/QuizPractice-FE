@@ -21,8 +21,6 @@ const PostListManage = () => {
   const postsPerPage = 5;
   const pagesVisited = pageNumber * postsPerPage;
 
-  
-
   useEffect(() => {
     fetch(`${BASE_URL}/marketing/post/manage/${user.userId}`, {
       headers: {
@@ -63,7 +61,6 @@ const PostListManage = () => {
   }, []);
 
   const handleAction = (postId, action) => {
-
     // Tìm post theo postId
     console.log(action);
     const updatedPost = postList.map((post) => {
@@ -86,7 +83,6 @@ const PostListManage = () => {
 
     // Cập nhật state với post đã được cập nhật
     updatedPostList(updatedPost);
-
 
     // Gửi yêu cầu cập nhật đến máy chủ ở đây
     // Đảm bảo bạn đã cài đặt endpoint phù hợp trên máy chủ để xử lý cập nhật
@@ -154,7 +150,7 @@ const PostListManage = () => {
       <li className="manage-post-list-element ">
         <div className="row">
           <div className="post-list-element-image col-sm-2">
-            <img src={baseUrl + post.image} alt="Image of the picture" />
+            <img src={post.image} alt="Image of the picture" />
           </div>
 
           <div className="col-sm-8 post-list-element-content">
@@ -215,7 +211,6 @@ const PostListManage = () => {
     setPageNumber(selected);
   };
 
-
   //  useEffect(() => {
   //    const filtered = postList.filter((post) => {
   //      const titleMatch = post.postCateName
@@ -232,8 +227,6 @@ const PostListManage = () => {
   //    });
   //    setFilteredPost(filtered);
   //  }, [postList, searchTerm, statusFilter]);
-
-  
 
   if (user.role !== "MARKETING") {
     return <PrivateContent />;
@@ -296,6 +289,6 @@ const PostListManage = () => {
         />
       </div>
     );
-  };
-}
+  }
+};
 export default PostListManage;
