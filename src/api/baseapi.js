@@ -1,2 +1,2 @@
-const BASE_URL = "https://quang-nv1911.onrender.com";
+const BASE_URL = "https://quangnv1911-fe.onrender.com";
 export default BASE_URL;
