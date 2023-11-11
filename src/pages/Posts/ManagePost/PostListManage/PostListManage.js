@@ -21,6 +21,8 @@ const PostListManage = () => {
   const postsPerPage = 5;
   const pagesVisited = pageNumber * postsPerPage;
 
+  
+
   useEffect(() => {
     fetch(`${BASE_URL}/marketing/post/manage/${user.userId}`, {
       headers: {
@@ -61,6 +63,7 @@ const PostListManage = () => {
   }, []);
 
   const handleAction = (postId, action) => {
+
     // Tìm post theo postId
     console.log(action);
     const updatedPost = postList.map((post) => {
@@ -84,6 +87,7 @@ const PostListManage = () => {
     // Cập nhật state với post đã được cập nhật
     updatedPostList(updatedPost);
 
+
     // Gửi yêu cầu cập nhật đến máy chủ ở đây
     // Đảm bảo bạn đã cài đặt endpoint phù hợp trên máy chủ để xử lý cập nhật
 
@@ -100,15 +104,11 @@ const PostListManage = () => {
       body: JSON.stringify({ status: updateStatus }),
     })
       .then((response) => {
-        console.log(response);
         if (!response.ok) {
-          console.log(response.message);
         }
         return response.json();
       })
       .then((data) => {
-        // Xử lý phản hồi từ máy chủ (nếu cần)
-        console.log("Posts updated:", data);
         displayPosts();
         alert("Update successfully");
       })
@@ -131,7 +131,6 @@ const PostListManage = () => {
     })
       .then((response) => {
         if (!response.ok) {
-          console.log(response.message);
         }
         // Nếu xóa thành công, cập nhật lại danh sách posts
         const updatedPost = postList.filter((post) => post.postId !== postId);
@@ -211,6 +210,7 @@ const PostListManage = () => {
     setPageNumber(selected);
   };
 
+
   //  useEffect(() => {
   //    const filtered = postList.filter((post) => {
   //      const titleMatch = post.postCateName
@@ -227,6 +227,8 @@ const PostListManage = () => {
   //    });
   //    setFilteredPost(filtered);
   //  }, [postList, searchTerm, statusFilter]);
+
+  
 
   if (user.role !== "MARKETING") {
     return <PrivateContent />;
@@ -289,6 +291,6 @@ const PostListManage = () => {
         />
       </div>
     );
-  }
-};
+  };
+}
 export default PostListManage;
