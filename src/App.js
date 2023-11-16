@@ -124,11 +124,12 @@ const App = () => {
           <Route path="/register/verifyEmail/" element={<VerifyEmail />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/subject/:subjectId" element={<SubjectDetailCheck />} />
+          <Route path="/posts" element={<PostList />} />
+          <Route path="/posts/view/:postId" element={<PostDetail />} />
           {isAuthenticated && (
             <>
               <Route path="/sliders" element={<SliderList />} />
-              <Route path="/posts" element={<PostList />} />
-              <Route path="/posts/view/:postId" element={<PostDetail />} />
+
               <Route path="/myRegistration" element={<UserRes />} />
 
               <Route

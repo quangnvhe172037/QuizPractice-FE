@@ -70,12 +70,7 @@ function PostList() {
 
 
     const token = localStorage.getItem("token");
-    const user = jwtDecode(token);
-    if (user.role !== "CUSTOMER") {
-        return (
-            <PrivateContent/>
-        )
-    } else {
+
         return (
             <section className="section posts-entry posts-entry-sm bg-light">
                 <div className="view-all-post container">
@@ -156,6 +151,5 @@ function PostList() {
             </section>
         );
     }
-}
 
 export default PostList;
